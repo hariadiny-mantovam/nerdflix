@@ -1,0 +1,105 @@
+$primary: #991c39;
+$secondary: #f00;
+$clear: #fd0;
+$font: Arial, Verdana, Tahoma;
+$size: 18px;
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font: $size $font;
+}
+
+.header{
+    width: 100%;
+    position: fixed;
+    background: linear-gradient(to bottom, #000, rgba(0,0,0,0));
+    font-weight: bold;
+    &-nav{
+        float: right;
+        ul{
+            list-style: none;
+            margin-top: 25px;
+            li{
+                display: inline-block;
+                a{
+                    margin: 20px;
+                    color: $clear;
+                    padding: 10px;
+                    background-color: $secondary;
+                    text-decoration: none;
+                    border-radius: 5px;
+                    transition: all 0.5s;
+                    &:hover{
+                        background-color: $primary;
+                        
+                    }
+                }
+            }
+        }
+    }
+}
+
+.banner {
+    & &-img{
+        width: 100%;
+    }
+}
+
+.container{
+    width: 1000px;
+    margin: 20px auto;
+}
+
+.flex{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    & &-card{
+        width: 24%;
+        margin: 3px;
+        box-shadow: 0 0 10px #ccc;
+        border-radius: 5px;
+        text-align: center;
+        margin-bottom: 20px;
+
+    }
+    & &-img{
+        width: 100%;
+        border-radius: 5px 5px 0 0 ;
+    }
+}
+
+.btn{
+    text-decoration: none;
+    background: $secondary;
+    color: $clear;
+    padding: 10px;
+    border-radius: 5px;
+    &:hover{
+        background: $primary;
+    }
+}
+p{
+    margin: 15px;
+    line-height: 30px;
+}
+
+footer{
+    background: #323232;
+    width: 100%;
+    height: 150px;
+}
+
+.footer-img{
+    display: block;
+    margin: 0 auto;
+}p{
+    color: #ccc;
+    text-align: center;
+}
+
+
